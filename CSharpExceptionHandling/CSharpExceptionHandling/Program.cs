@@ -33,7 +33,9 @@ namespace CSharpExceptionHandling
             catch (DivideByZeroException ex)
             {
                 // Execute by commenting any one of the below lines
-                throw new Exception("Exception is thrown");
+                throw;
+                // throw ex;
+                // throw new Exception("Exception is thrown");
                 // throw new Exception("Exception is thrown", ex);
             }
         }
